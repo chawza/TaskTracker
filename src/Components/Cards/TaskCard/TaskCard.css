@@ -1,0 +1,51 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.group-mark {
+  order: 1;
+  background-color: purple;
+  width: 12px;
+}
+
+.card-content {
+  order: 2;
+  flex-grow: 2;
+  margin: 0px;
+  padding: 8px;
+}
+
+.card-meta-area {
+  height: 18px;
+}
+
+.card-name {
+  margin: 0;
+}
+
+.card-description {
+  margin: 0;
+  padding-top: 8px;
+}
+
+.card-action-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 18px;
+}
+
+.task-icon-btn {
+  order: 1;
+  height: 1em;
+  width: 18px;
+}
