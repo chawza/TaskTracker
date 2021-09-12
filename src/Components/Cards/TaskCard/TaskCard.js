@@ -11,11 +11,14 @@ const TaskCard = (props) => {
 
     const [cardIsOver, setCardIsOver] = useState(false);
 
+    function CapitalizeFirstLetter(text) {
+      return text[0].toUpperCase() + text.slice(1);
+    }
+
     const groupColor = taskData.group?.color || 'transparent';
     const groupAreaStyle = {backgroundColor: groupColor};
     const TaskDescription = taskData.description;
-    let TaskName = taskData.name;
-    TaskName = TaskName[0].toUpperCase() + TaskName.slice(1);
+    const TaskName = taskData.name? CapitalizeFirstLetter(taskData.name): '';
         
     return (
       <div className="card-container"
